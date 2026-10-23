@@ -73,7 +73,7 @@ vinheria-agnello-checkpoint02/
 
 ## Links do projeto
 
-- **Repositório GitHub:** https://github.com/Saulomenches/vinheria-agnello-checkpoint02)
+- **Repositório GitHub:** https://github.com/Saulomenches/vinheria-agnello-checkpoint02
 - **GitHub Pages:** https://saulomenches.github.io/Vinharia-Agnello-CheckPoint-Front/
 
 ---
