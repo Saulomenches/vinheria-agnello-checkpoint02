@@ -1,4 +1,5 @@
 
+
 /*
   VINHERIA AGNELLO — CHECKPOINT 02
   Sistema de cadastro e controle de estoque de vinhos
@@ -60,7 +61,7 @@ function validarNome(nome) {
 
 function validarSafra(safra) {
     return (
-        safra !== "" &&
+        safra.trim() !== "" &&
         Number.isInteger(Number(safra)) &&
         Number(safra) > 0 &&
         Number(safra) <= anoAtual
@@ -69,7 +70,7 @@ function validarSafra(safra) {
 
 function validarEstoque(quantidade) {
     return (
-        quantidade !== "" &&
+        quantidade.trim() !== "" &&
         Number.isInteger(Number(quantidade)) &&
         Number(quantidade) >= 0
     );
@@ -286,10 +287,10 @@ function cadastrarVinhos() {
     let continuar = true;
 
     alert(
-    "Vinheria Agnello\n\n" +
-    "Bem-vindo ao nosso sistema de cadastro de vinhos!\n\n" +
-    "Você poderá cadastrar até 20 vinhos."
-);
+        "Vinheria Agnello\n\n" +
+        "Bem-vindo ao nosso sistema de cadastro de vinhos!\n\n" +
+        "Você poderá cadastrar até 20 vinhos."
+    );
 
     while (continuar && totalCadastros < limiteCadastros) {
         let nome = "";
@@ -297,7 +298,7 @@ function cadastrarVinhos() {
         let quantidade = "";
 
         // Validação do nome
-        while (!validarNome(nome)) {
+        while (nome === "" || !validarNome(nome)) {
             nome = prompt("Digite o nome do vinho:");
 
             if (nome === null) {
@@ -306,7 +307,7 @@ function cadastrarVinhos() {
             }
 
             if (!validarNome(nome)) {
-                alert("Nome inválido. Digite o nome do vinho.");
+                alert("Nome inválido!\nDigite o nome do vinho novamente.");
             }
         }
 
@@ -330,7 +331,7 @@ function cadastrarVinhos() {
             if (!validarSafra(safra)) {
                 alert(
                     "Safra inválida!\n" +
-                    "Digite um ano entre 1 e " + anoAtual + "."
+                    "Digite um ano inteiro entre 1 e " + anoAtual + "."
                 );
             }
         }
@@ -355,7 +356,8 @@ function cadastrarVinhos() {
             if (!validarEstoque(quantidade)) {
                 alert(
                     "Quantidade inválida!\n" +
-                    "Digite um número inteiro igual ou maior que zero."
+                    "Digite um número inteiro igual ou maior que zero.\n" +
+                    "O campo não pode ficar vazio nem conter apenas espaços."
                 );
             }
         }
@@ -373,7 +375,7 @@ function cadastrarVinhos() {
 
         totalCadastros++;
 
-        // Identifica manualmente a safra mais antiga
+        // Identifica a safra mais antiga
         if (
             totalCadastros === 1 ||
             safra < safraMaisAntiga
