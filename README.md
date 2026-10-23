@@ -4,20 +4,17 @@
 
 O projeto Vinheria Agnello foi desenvolvido como parte do Checkpoint 02 da FIAP, dando continuidade ao trabalho iniciado no CP01. A proposta é apresentar a vinheria, sua história e seus produtos por meio de um site, aproximando os clientes do universo dos vinhos e trazendo funcionalidades que também ajudam na organização do negócio.
 
+Para esta etapa, escolhemos manter a estrutura do site desenvolvido no CP01, em vez de criar um projeto separado com uma nova estrutura de pastas e arquivos. Essa decisão permitiu dar continuidade ao trabalho anterior, reaproveitando a base já construída e integrando as novas funcionalidades ao mesmo site. Dessa forma, o CP02 representa uma evolução do projeto, mantendo sua identidade visual e ampliando seus recursos.
+
 Nesta etapa, demos um passo além na parte de programação com JavaScript. Reaproveitamos a ideia de cadastro de vinhos do CP01 e evoluímos o sistema para permitir o cadastro de vários produtos em sequência, utilizando prompt() para coletar as informações e alert() para exibir mensagens e avisos. Também criamos funções reutilizáveis para validar os dados informados, verificar se um vinho está com estoque baixo (menos de cinco unidades), classificar os vinhos como jovens, amadurecidos ou antigos e apresentar seus dados no console, com alertas para o usuário.
 
-Ao finalizar os cadastros, o sistema apresenta um resumo com a quantidade de vinhos registrados, quantos estão com estoque baixo e qual possui a safra mais antiga. Durante o desenvolvimento, também trabalhamos com o escopo das variáveis e a reutilização de funções, evitando a repetição desnecessária de código.
+Ao finalizar os cadastros, o sistema apresenta um resumo com a quantidade de vinhos registrados, quantos estão com estoque baixo e qual possui a safra mais antiga. Durante o desenvolvimento, também trabalhamos com o escopo das variáveis, o uso de um contador para acompanhar os cadastros e a criação de variáveis numeradas para diferenciar os vinhos, além da reutilização de funções para evitar a repetição desnecessária de código.
 
-Pensando em como esse recurso seria utilizado no dia a dia, criamos uma página exclusiva de administração. A ideia é que o próprio responsável pela vinheria possa acessar essa área para cadastrar novos vinhos e acompanhar informações importantes sobre os produtos e o estoque. Dessa forma, o projeto conecta os conceitos de JavaScript trabalhados na disciplina a uma situação prática de uso do site.
-
-
+Pensando em como esse recurso seria utilizado no dia a dia, criamos uma página exclusiva de administração. A ideia é que o próprio responsável pela vinheria possa acessar essa área para cadastrar novos vinhos e acompanhar informações importantes sobre os produtos e o estoque. Dessa forma, o projeto conecta os conceitos de JavaScript trabalhados na disciplina a uma situação prática de uso do site, dando continuidade ao desenvolvimento iniciado no CP01.
 
 ![Página de administração](./src/assets/imgs/paginaAdmin.png)
 
 ![Página de administração — segunda visualização](./src/assets/imgs/paginaAdmin2.png)
-
-
-
 
 
 ## Tecnologias utilizadas
@@ -63,7 +60,9 @@ vinheria-agnello-checkpoint02/
     │
     └── assets/
         └── imgs/
-            └── admin.png
+            ├── admin.png
+            ├── paginaAdmin.png
+            └── paginaAdmin2.png
 ```
 
 ## Integrantes
