@@ -58,7 +58,7 @@ vinheria-agnello-checkpoint02/
 ## Links do projeto
 
 - **Repositório GitHub:** [\[inserir URL do repositório\]](https://github.com/Saulomenches/vinheria-agnello-checkpoint02)
-- **GitHub Pages:** [inserir URL do site publicado]
+- **GitHub Pages:** https://saulomenches.github.io/Vinharia-Agnello-CheckPoint-Front/
 
 ---
 
