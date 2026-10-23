@@ -2,7 +2,23 @@
 
 ## Descrição do projeto
 
-O projeto Vinheria Agnello foi desenvolvido como parte do Checkpoint 02 da FIAP. O objetivo é criar um site para apresentar a vinheria, seus produtos e sua história, além de implementar funcionalidades administrativas para o cadastro de vinhos e o controle de estoque utilizando JavaScript.
+O projeto Vinheria Agnello foi desenvolvido como parte do Checkpoint 02 da FIAP, dando continuidade ao trabalho iniciado no CP01. A proposta é apresentar a vinheria, sua história e seus produtos por meio de um site, aproximando os clientes do universo dos vinhos e trazendo funcionalidades que também ajudam na organização do negócio.
+
+Nesta etapa, demos um passo além na parte de programação com JavaScript. Reaproveitamos a ideia de cadastro de vinhos do CP01 e evoluímos o sistema para permitir o cadastro de vários produtos em sequência, utilizando prompt() para coletar as informações e alert() para exibir mensagens e avisos. Também criamos funções reutilizáveis para validar os dados informados, verificar se um vinho está com estoque baixo (menos de cinco unidades), classificar os vinhos como jovens, amadurecidos ou antigos e apresentar seus dados no console, com alertas para o usuário.
+
+Ao finalizar os cadastros, o sistema apresenta um resumo com a quantidade de vinhos registrados, quantos estão com estoque baixo e qual possui a safra mais antiga. Durante o desenvolvimento, também trabalhamos com o escopo das variáveis e a reutilização de funções, evitando a repetição desnecessária de código.
+
+Pensando em como esse recurso seria utilizado no dia a dia, criamos uma página exclusiva de administração. A ideia é que o próprio responsável pela vinheria possa acessar essa área para cadastrar novos vinhos e acompanhar informações importantes sobre os produtos e o estoque. Dessa forma, o projeto conecta os conceitos de JavaScript trabalhados na disciplina a uma situação prática de uso do site.
+
+
+
+![Página de administração](./src/assets/imgs/paginaAdmin.png)
+
+![Página de administração — segunda visualização](./src/assets/imgs/paginaAdmin2.png)
+
+
+
+
 
 ## Tecnologias utilizadas
 
@@ -57,7 +73,7 @@ vinheria-agnello-checkpoint02/
 
 ## Links do projeto
 
-- **Repositório GitHub:** [\[inserir URL do repositório\]](https://github.com/Saulomenches/vinheria-agnello-checkpoint02)
+- **Repositório GitHub:** https://github.com/Saulomenches/vinheria-agnello-checkpoint02)
 - **GitHub Pages:** https://saulomenches.github.io/Vinharia-Agnello-CheckPoint-Front/
 
 ---
