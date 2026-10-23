@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Área administrativa da Vinheria Agnello.">
+    <title>Administração | Vinheria Agnello</title>
+    <link rel="stylesheet" href="/src/css/admin.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO COM A IMAGEM ORIGINAL -->
+    <header class="site-header">
+        <a href="index.html" class="header-image-link" aria-label="Voltar à página inicial">
+            <img
+                src="/src/assets/imgs/admin.png"
+                alt="Vinheria Agnello — padronagem de abridores de vinho"
+                class="header-image"
+            >
+        </a>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <section class="page-intro">
+            <p class="eyebrow">Área administrativa · Gestão de estoque</p>
+
+            <h1>Gestão de vinhos</h1>
+
+            <p class="intro-text">
+                Bem-vindo à área administrativa da Vinheria Agnello.
+                Organize as safras, acompanhe o estoque e mantenha
+                as informações dos rótulos sempre atualizadas.
+            </p>
+        </section>
+
+        <section class="admin-layout">
+
+            <!-- INSTRUÇÕES DE CADASTRO -->
+            <div class="form-panel">
+                <div class="section-heading">
+                    <span class="section-number">01</span>
+
+                    <div>
+                        <p class="eyebrow">Novo registro</p>
+                        <h2>Cadastro de vinhos</h2>
+                    </div>
+                </div>
+
+                <p class="panel-description">
+                    O cadastro é realizado pelo sistema interativo
+                    da Vinheria Agnello. Ao iniciar, você poderá
+                    informar os dados de cada vinho e cadastrar
+                    vários rótulos em sequência.
+                </p>
+
+                <div class="notice">
+                    <span class="notice-icon" aria-hidden="true">i</span>
+
+                    <p>
+                        <strong>Antes de começar:</strong>
+                        tenha em mãos o nome do vinho, o ano da safra
+                        e a quantidade disponível em estoque.
+                    </p>
+                </div>
+
+                <h3>Como funciona?</h3>
+
+                <p class="intro-text">
+                    Ao iniciar o cadastro, responda às perguntas
+                    apresentadas na tela. O sistema validará os dados,
+                    classificará os vinhos por idade e alertará
+                    quando houver menos de cinco unidades em estoque.
+                </p>
+
+                <p class="intro-text">
+                    Ao final, você verá um resumo com o total de
+                    cadastros, os vinhos com estoque baixo e o rótulo
+                    com a safra mais antiga.
+                </p>
+
+                <button
+                    type="button"
+                    class="primary-button"
+                    id="iniciarCadastro"
+                >
+                    Iniciar cadastro de vinhos
+                </button>
+
+                <p class="button-caption">
+                    O cadastro será iniciado após clicar no botão.
+                </p>
+            </div>
+
+            <!-- PAINEL INFORMATIVO -->
+            <aside class="info-panel">
+                <div class="info-top">
+                    <p class="eyebrow">Vinheria Agnello</p>
+
+                    <h2>Gestão com tradição</h2>
+
+                    <p>
+                        Conheça os critérios utilizados pelo sistema
+                        para acompanhar os rótulos e o estoque.
+                    </p>
+                </div>
+
+                <div class="rule-list">
+
+                    <div class="rule-item">
+                        <span class="rule-icon" aria-hidden="true">01</span>
+
+                        <div>
+                            <h3>Dados dos rótulos</h3>
+                            <p>
+                                Informe o nome, a safra e a quantidade
+                                de unidades disponíveis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="rule-item">
+                        <span class="rule-icon" aria-hidden="true">02</span>
+
+                        <div>
+                            <h3>Classificação dos vinhos</h3>
+                            <p>
+                                Os vinhos serão classificados como
+                                jovens, amadurecidos ou antigos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="rule-item">
+                        <span class="rule-icon" aria-hidden="true">03</span>
+
+                        <div>
+                            <h3>Alerta de estoque</h3>
+                            <p>
+                                Quantidades inferiores a cinco
+                                unidades serão sinalizadas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="rule-item">
+                        <span class="rule-icon" aria-hidden="true">04</span>
+
+                        <div>
+                            <h3>Resumo final</h3>
+                            <p>
+                                Confira o total de cadastros, os
+                                estoques baixos e a safra mais antiga.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="vintage-note">
+                    <span class="grape-mark" aria-hidden="true">❦</span>
+
+                    <p>Cada safra conta uma história.</p>
+
+                    <span>VINHERIA AGNELLO</span>
+                </div>
+            </aside>
+
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="site-footer">
+        <p>
+            Vinheria Agnello: tradição, conhecimento e experiência
+            no mundo dos vinhos.
+        </p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/admin.js"></script>
+
+</body>
+</html>

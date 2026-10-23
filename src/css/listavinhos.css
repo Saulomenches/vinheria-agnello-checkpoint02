@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(172, 145, 96, 0.575);
+}
+
+nav img {
+    width: 100%;
+}
+
+/* =========================================
+   GARRAFA 0 - CABERNET
+   ========================================= */
+
+.garrafa0 {
+    width: 1000px;
+    margin-left: -320px;
+    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.5));
+}
+
+.cabernet {
+    position: absolute;
+    width: 900px;
+}
+
+/* =========================================
+   GARRAFA 1 - MERLOT
+   ========================================= */
+
+.garrafa1 {
+    width: 1000px;
+    margin-left: -320px;
+    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.5));
+}
+
+.merlot {
+    position: absolute;
+    width: 900px;
+    bottom: -300px;
+    margin-left: -100px;
+}
+
+/* =========================================
+   GARRAFA 2 - SYRAH
+   ========================================= */
+
+.garrafa2 {
+    width: 1000px;
+    margin-left: -320px;
+    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.5));
+}
+
+.syrah {
+    position: absolute;
+    width: 900px;
+    bottom: -1800px;
+    left: 660px;
+}
+
+/* =========================================
+   GARRAFA 3 - MALBEC
+   ========================================= */
+
+.garrafa3 {
+    width: 1000px;
+    margin-left: -320px;
+    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.5));
+}
+
+.malbec {
+    position: absolute;
+    right: 390px;
+    width: 900px;
+    bottom: -3300px;
+}
+
+/* =========================================
+   GARRAFA 4 - PINOT
+   ========================================= */
+
+.garrafa4 {
+    width: 1000px;
+    margin-left: -320px;
+    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.5));
+}
+
+.pinot {
+    position: absolute;
+    width: 900px;
+    right: 390px;
+    bottom: -4700px;
+}
+
+/* =========================================
+   GARRAFA 5 - CHARDONNAY
+   ========================================= */
+
+.garrafa5 {
+    width: 1000px;
+    margin-left: -320px;
+    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.5));
+}
+
+.chardonnay {
+    position: absolute;
+    width: 900px;
+    right: 390px;
+    bottom: -6200px;
+}
+
+/* =========================================
+   GARRAFA 6 - SAUVIGNON
+   ========================================= */
+
+.garrafa6 {
+    width: 1000px;
+    margin-left: -320px;
+    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.5));
+}
+
+.sauvignon {
+    position: absolute;
+    width: 900px;
+    bottom: -7600px;
+}
+
+/* =========================================
+   GARRAFA 7 - ROSÉ
+   ========================================= */
+
+.garrafa7 {
+    width: 1000px;
+    margin-left: -320px;
+    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.5));
+}
+
+.rose {
+    position: absolute;
+    width: 900px;
+    bottom: -9000px;
+}
+
+/* =========================================
+   GARRAFA 8 - ESPUMANTE
+   ========================================= */
+
+.garrafa8 {
+    width: 1000px;
+    margin-left: -320px;
+    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.5));
+}
+
+.espumante {
+    position: absolute;
+    width: 900px;
+    bottom: -10400px;
+}
+
+/* =========================================
+   GARRAFA 9 - VINHO DO PORTO
+   ========================================= */
+
+.garrafa9 {
+    width: 1000px;
+    margin-left: -320px;
+    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.5));
+}
+
+.porto {
+    position: absolute;
+    width: 900px;
+    bottom: -11700px;
+}
+
+/* =========================================
+   BOTÃO DA TABELA DE VINHOS
+   ========================================= */
+
+.tabelavinhos {
+    display: block;
+    width: 700px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 40px;
+    border: 2px solid rgb(69, 13, 10);
+    color: rgb(69, 13, 10);
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+/* =========================================
+   RODAPÉ
+   ========================================= */
+
+.rodapeVoltar {
+    display: flex;
+    justify-content: left;
+    background-color: rgb(69, 13, 10);
+    width: 100%;
+    height: 100px;
+    padding: 40px;
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+.rodapeVoltar a {
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+/* =========================================
+   MENSAGENS DE PREÇO
+   ========================================= */
+
+.mensagemPreco {
+    display: none;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(69, 13, 10);
+    border-radius: 10px;
+    width: 160px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Cabernet */
+.listaVinhos li:nth-child(1) .mensagemPreco {
+    top: 0;
+    left: 300px;
+}
+
+/* Merlot */
+.listaVinhos li:nth-child(2) .mensagemPreco {
+    top: 1200px;
+    left: 300px;
+}
+
+/* Syrah */
+.listaVinhos li:nth-child(3) .mensagemPreco {
+    top: 2500px;
+    left: 300px;
+}
+
+/* Malbec */
+.listaVinhos li:nth-child(4) .mensagemPreco {
+    top: 4000px;
+    left: 300px;
+}
+
+/* Pinot */
+.listaVinhos li:nth-child(5) .mensagemPreco {
+    top: 5380px;
+    left: 300px;
+}
+
+/* Chardonnay */
+.listaVinhos li:nth-child(6) .mensagemPreco {
+    top: 6900px;
+    left: 300px;
+}
+
+/* Sauvignon Blanc */
+.listaVinhos li:nth-child(7) .mensagemPreco {
+    top: 8200px;
+    left: 300px;
+}
+
+/* Rosé */
+.listaVinhos li:nth-child(8) .mensagemPreco {
+    top: 9700px;
+    left: 300px;
+}
+
+/* Espumante */
+.listaVinhos li:nth-child(9) .mensagemPreco {
+    top: 10990px;
+    left: 300px;
+}
+
+/* Vinho do Porto */
+.listaVinhos li:nth-child(10) .mensagemPreco {
+    top: 12500px;
+    left: 300px;
+}
+
+.listaVinhos li:hover .mensagemPreco {
+    display: block;
+}

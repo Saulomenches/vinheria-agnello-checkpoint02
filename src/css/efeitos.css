@@ -1,0 +1,144 @@
+/* =========================================
+   1. MENU E LINKS
+   ========================================= */
+
+.cabecalho a,
+.rodapeVoltar a {
+    display: inline-block;
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.cabecalho a:hover {
+    color: white;
+    transform: translateY(-5px) scale(1.1);
+}
+
+.rodapeVoltar a:hover {
+    color: rgb(236, 226, 130);
+    transform: translateY(-5px);
+}
+
+/* Pseudo-classe :focus-visible
+   Destaque ao navegar pelos links usando o teclado */
+
+.cabecalho a:focus-visible,
+.rodapeVoltar a:focus-visible,
+.tabelavinhos:focus-visible {
+    outline: 3px solid rgb(69, 13, 10);
+    outline-offset: 4px;
+}
+
+/* =========================================
+   2. TÍTULO "DESCUBRA VINHOS"
+   ========================================= */
+
+.descubraVinhos h1 {
+    transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+.descubraVinhos h1:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.897);
+}
+
+/* Pseudo-elemento ::after
+   Linha decorativa abaixo do título */
+
+.descubraVinhos h1 {
+    position: relative;
+}
+
+.descubraVinhos h1::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: rgb(69, 13, 10);
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%);
+}
+
+/* Pseudo-elemento ::first-letter
+   Destaque na primeira letra do título */
+
+.descubraVinhos h1::first-letter {
+    color: rgb(158, 46, 46);
+}
+
+/* =========================================
+   3. BOTÃO DA TABELA DE VINHOS
+   ========================================= */
+
+.tabelavinhos {
+    transition: background-color 0.4s ease,
+                color 0.4s ease,
+                transform 0.4s ease;
+}
+
+.tabelavinhos:hover {
+    transform: scale(1.03);
+}
+
+/* Pseudo-elemento ::after no botão */
+
+.tabelavinhos::after {
+    content: " →";
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.tabelavinhos:hover::after {
+    transform: translateX(5px);
+}
+
+/* =========================================
+   4. MENSAGENS DE PREÇO
+   ========================================= */
+
+.listaVinhos li:hover .mensagemPreco {
+    display: block;
+}
+
+/* =========================================
+   5. ANIMAÇÃO DE ENTRADA DAS GARRAFAS
+   ========================================= */
+
+/* Uma única animação compartilhada pelas garrafas */
+
+@keyframes entrarDireita {
+    from {
+        opacity: 0;
+        transform: translateX(1200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Configuração da animação */
+
+.merlot,
+.syrah,
+.malbec,
+.pinot,
+.chardonnay,
+.sauvignon,
+.rose,
+.espumante,
+.porto {
+    animation: entrarDireita linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 80%;
+}
+
+/* =========================================
+   6. SELEÇÃO DE TEXTO
+   ========================================= */
+
+::selection {
+    color: white;
+    background-color: rgb(69, 13, 10);
+}
